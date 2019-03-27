@@ -6,11 +6,22 @@ Trying to predict if a costumer will start a dispute after a complain regarding 
 After every complain consumers can start a dispute. This is the first approach.
 
 ## Consumer data notebook
+
 ### Exploratory analysis.
-
-
+From the exploratory analysis I found a lot of findings:
+- A lot of null values from disputes:
+   - Products with no data about disputes
+   - Companies with no data about siputes
+   - Cases still in progress.
+- I didnt find any patter that indicated that a feature was a key to predict disputes.
+- I decided dont use date and locations features, since seems like all the dates and locations have the same rate of dispute vs non disputes. Also all these were categorical variables that just add more complexity to the models.
+- Most of my data is about non-disputes.
 ### Featuring ingeneering
+I used just the data with non null values for dispute. Create a model to predict if the customer will have the option to start a dispute is another interesteing issue. 
+Now I will focus in: having the option to start a dispute, will a customer start a dispute??
 
+I processd all the categorical variables, in some of them they had thousands of unique values so I grouped them in categories.
+Number of features for basic model= 90
 
 ### Unbalanced class and setting simple models.
 
@@ -29,6 +40,7 @@ I will use a combination of the last two options.
 
 ## Optimizing with grid search
 
+I removed some of the group by categories to add more features to the models, now I  have 283 features.
 I used grid search to optimize the parameter values for each model.
 
 ## is this overffiting
