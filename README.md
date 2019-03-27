@@ -14,6 +14,18 @@ After every complain consumers can start a dispute. This is the first approach.
 
 ### Unbalanced class and setting simple models.
 
+The classes for dispute are unbalanced, most of the data is for non-disputes. This is an issue for the models because I will reach high accuracy if the models are good predicting non-dispute, but from a business perspective is more interesting find when a dispute will start.
+
+There are different approachs to unbalanced classes:
+- Resampling 
+-- Up-sampling non-dsiputes
+-- Down sampling disputes
+   But I dont want to create synthetic data.
+-  Change performance metric from accuracy to AUROC.
+-  Peanlizing algorithms using class weight.
+-  Using tree based algorithms
+
+I will use a combination of the last two options.
 
 ## Optimizing with grid search
 
