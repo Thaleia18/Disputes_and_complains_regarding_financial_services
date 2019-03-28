@@ -38,12 +38,12 @@ There are different approachs to unbalanced classes:
 
 I will use a combination of the last two options.
 
-## Optimizing with grid search
+## Optimizing with grid search notebook
 
 I removed some of the group by categories to add more features to the models, now I  have 283 features.
 I used grid search to optimize the parameter values for each model.
 
-## is this overffiting
+## is this overffiting notebook
 
 MY main problem was that even when I have high accuracy F1 is smaller. The model is good  to predict no disputes, but is failing to predict disputes.
 
@@ -52,7 +52,7 @@ All the models got a gap between the training score and validation score, with t
 
 The overfit is reduced when 20-25% of the data is used to training and the other is set to the validation set.
 
-## Insights
+## Insights notebook
 I used eli5 to perform Permutacion Importance.
 
 Permutacion importance returns the weight of each feature (weight is how the accuracy changes when the values in the feature shuffle).
