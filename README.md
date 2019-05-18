@@ -17,7 +17,7 @@ From the exploratory analysis I found a lot of findings:
 - I didnt find any patter that indicated that a feature was a key to predict disputes.
 - I decided dont use date and locations features, since seems like all the dates and locations have the same rate of dispute vs non disputes. Also all these were categorical variables that just add more complexity to the models.
 - Most of my data is about non-disputes.
-### Featuring ingeneering
+### Featuring engeneering
 I used just the data with non null values for dispute. Create a model to predict if the customer will have the option to start a dispute is another interesteing issue. 
 Now I will focus in: having the option to start a dispute, will a customer start a dispute??
 
